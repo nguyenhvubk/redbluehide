@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="redbluehide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vu" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-wx-e87">
+                                <rect key="frame" x="206" y="53" width="149" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quynh" translatesAutoresizingMaskIntoConstraints="NO" id="zrj-86-Jlz">
+                                <rect key="frame" x="20" y="39" width="149" height="127"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU2-at-maN">
+                                <rect key="frame" x="49" y="306" width="90" height="30"/>
+                                <state key="normal" title="Hide Quynh"/>
+                                <connections>
+                                    <action selector="HideQuynh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rg-bU-XPt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3z-Ca-wx6">
+                                <rect key="frame" x="235" y="306" width="90" height="30"/>
+                                <state key="normal" title="Hide Vu"/>
+                                <connections>
+                                    <action selector="HideVu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yb8-lc-TR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-gi-4pK">
+                                <rect key="frame" x="164" y="522" width="46" height="30"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="ResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4t-DY-Q1n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="QuynhButton" destination="hU2-at-maN" id="ycx-tM-SEG"/>
+                        <outlet property="QuynhImage" destination="zrj-86-Jlz" id="B83-ZL-X76"/>
+                        <outlet property="ResetButton" destination="Jy1-gi-4pK" id="Ih8-3L-VB7"/>
+                        <outlet property="VuButton" destination="x3z-Ca-wx6" id="5IT-0p-V5s"/>
+                        <outlet property="VuImage" destination="Otc-wx-e87" id="Qp5-MA-acX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242.5" y="339.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="quynh" width="3456" height="2304"/>
+        <image name="vu" width="3264" height="2448"/>
+    </resources>
+</document>
